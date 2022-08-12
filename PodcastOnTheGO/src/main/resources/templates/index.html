@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>All Podcast</title>
+</head>
+<h1>welcome, here are all the available podcasts</h1>
+
+
+<a th:each="p: ${allPodcastTest}" class="cell checked" >
+  <div th:text="${p.component3()}">name</div>
+
+
+</a>
+
+</html>
